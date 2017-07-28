@@ -1,24 +1,21 @@
-# README
+Wedding Registry. This app will allow a couple to create a new registry, add gifts and guests. Guests can claim gifts for the couples.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Staging:
+https://wenig-wedding-reg.herokuapp.com/
 
-Things you may want to cover:
 
-* Ruby version
+Installation
+-----------------
+* Git Clone
+* cd into directory
+* rake db:create
+* rake db:migrate
+* rake db:seed
 
-* System dependencies
+-----------------
 
-* Configuration
+Tests
+-----------------
+* bundle exec rspec
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+-----------------
