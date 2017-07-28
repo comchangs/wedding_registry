@@ -1,0 +1,25 @@
+<div class="wedding-detail">
+
+<div class="image-detail">
+<h3><%= @wedding.name %> Wedding Registry</h3>
+<br>
+<% @gifts.each do | gift | %>
+    <% if gift.status == 'available' %>
+        <%= form_for @gift, url: claim_path  do |f| %>
+        <%= f.hidden_field :guest, value: params['search'] %>
+        <%= f.hidden_field :gift, value: gift.id %>
+        <%= f.submit "Claim" %>
+    <% end %>
+    <h3><%= gift.name %> | <%= gift.price %> <h3>
+    <h3><%= link_to 'Buy Here', gift.source %><h3>
+    <%= image_tag gift.image, :class => "gift-image" %>
+    <hr>
+    <% end %>
+   
+<% end %>
+
+
+</div>
+
+
+</div>

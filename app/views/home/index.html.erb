@@ -1,1 +1,31 @@
-<h1>Home Page</h1>
+<div class="container">
+
+    <div class="row row-offcanvas row-offcanvas-right">
+
+        <div class="col-xs-12 col-sm-9">
+            <image class="main-image" src="wedding_background.jpeg"></image>
+        </div>
+
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+            <div class="list-group">
+                <div class="list-group-item active" style="height: 100px;"><%= link_to "Couples", weddings_path, {:style=>'color: white; font-size: 28px;', :class => "css_class"}%></div>
+            </div>
+
+            <div class="list-group">
+                <div class="list-group-item active" style="height: 100px;"><%= link_to "Guests", registries_path, {:style=>'color: white; font-size: 28px;', :class => "css_class"}%></div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <hr>
+
+    <footer>
+        <p>© Paul Wenig</p>
+    </footer>
+
+  </div>
+</div>

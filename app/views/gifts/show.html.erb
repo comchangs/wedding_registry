@@ -1,0 +1,15 @@
+<div class="wedding-detail">
+<div class="image-detail">
+<h3><%= @gift.name %> | <%= @gift.price %> <h3>
+<% if @gift.status == 'claimed' %>
+<h3> Claimed by: <%= @gift.guest.name %>
+<% else %>
+<h3>Available</h3>
+<% end %>
+<h3><%= link_to 'Click Here to Purchase', @gift.source %><h3>
+<%= image_tag @gift.image, :class => "gift-image" %>
+</div>
+
+
+
+</div>

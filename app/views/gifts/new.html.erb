@@ -1,0 +1,17 @@
+<div class="wedding-detail">
+<h3>Add Gifts to Registry</h3>
+
+<%= form_for @gift do |f| %>
+    <%= f.label :name, 'Name' %>
+    <%= f.text_field :name, class: "form-control" %><br>
+    <%= f.label :image, 'Image'%>
+    <%= f.text_field :image, class: "form-control" %><br>
+    <%= f.label :price, 'Price'%>
+    <%= f.text_field :price, class: "form-control" %><br>
+    <%= f.label :source, 'URL'%>
+    <%= f.text_field :source, class: "form-control" %><br>
+    <%= f.hidden_field :registry, value: params['registry'] %>
+    <%= f.submit "Create" %>
+    <% end %>
+</div>
+
